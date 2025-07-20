@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Studio</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      perspective: 1000px;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0f0f5, #d0d8e8);
+      color: #333;
+    }
+
+    /* Sticky Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #2c3e50;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transform-style: preserve-3d;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 10px 16px;
+      transition: transform 0.4s, background-color 0.3s;
+      display: inline-block;
+      transform-style: preserve-3d;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+      border-radius: 6px;
+      transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+    }
+
+    /* Section Styling */
+    section {
+      padding: 100px 30px;
+      min-height: 100vh;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease;
+    }
+
+    section:hover {
+      transform: rotateY(1deg) scale(1.01);
+    }
+
+    section:nth-child(odd) {
+      background: linear-gradient(135deg, #e8f4f8, #d0f0f0);
+    }
+
+    section:nth-child(even) {
+      background: linear-gradient(135deg, #fef9e7, #fdebd0);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    p {
+      max-width: 700px;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #2c3e50;
+      color: white;
+      font-size: 1rem;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Sections -->
+  <!-- HOME Section -->
+<section id="home">
+  <h1>Home</h1>
+  <p>Welcome to our creative digital studio! We're thrilled to have you here. Our mission is to empower businesses with design, technology, and storytelling.</p>
+  <p>In a world that never stops evolving, having a compelling online presence is critical. Whether you're launching a startup or refreshing a brand, we’re here to partner with you every step of the way.</p>
+  <p>Explore our services, view our past work, and dive into our blog to see how we turn ideas into impactful digital experiences.</p>
+</section>
+
+<!-- ABOUT US Section -->
+<section id="about">
+  <h1>About Us</h1>
+  <p>Founded in 2018, our team has grown into a diverse mix of designers, developers, writers, and strategists. We bring together creativity, logic, and human insight to build meaningful digital products.</p>
+  <p>We value long-term relationships and transparent collaboration. Every project is an opportunity to solve problems, improve lives, and push boundaries in design and tech.</p>
+  <p>Our approach is people-first: whether it’s crafting a user-friendly website or writing impactful copy, we focus on real needs and real outcomes.</p>
+</section>
+
+<!-- SERVICES Section -->
+<section id="services">
+  <h1>Services</h1>
+  <p>We offer a full suite of digital services designed to grow your brand and drive engagement:</p>
+  <ul style="padding-left: 20px;">
+    <li><strong>Web Design & UI/UX:</strong> Clean, responsive designs tailored to your audience.</li>
+    <li><strong>Web Development:</strong> Scalable, fast, and secure websites built on modern stacks.</li>
+    <li><strong>SEO & Analytics:</strong> Make your brand discoverable and optimize performance.</li>
+    <li><strong>Content Strategy:</strong> Clear messaging with compelling storytelling across platforms.</li>
+    <li><strong>Brand Identity:</strong> Logos, colors, and brand guidelines that reflect your vision.</li>
+  </ul>
+  <p>Need something custom? We love unique challenges and are always ready to brainstorm!</p>
+</section>
+
+<!-- PORTFOLIO Section -->
+<section id="portfolio">
+  <h1>Portfolio</h1>
+  <p>We’ve worked with over 120 brands in various industries including tech, healthcare, education, retail, and nonprofits. Here are a few highlights:</p>
+  <ul style="padding-left: 20px;">
+    <li><strong>HealthSync:</strong> A patient portal redesign that improved accessibility and boosted engagement by 42%.</li>
+    <li><strong>EcoMart:</strong> An e-commerce platform for sustainable goods with full-stack development and SEO optimization.</li>
+    <li><strong>Bright Future Ed:</strong> A mobile-responsive site for an ed-tech startup, focused on speed and content delivery.</li>
+    <li><strong>ArtBox:</strong> A portfolio website for artists to showcase work and sell pieces online with secure payments.</li>
+  </ul>
+  <p>Every project is crafted with attention to detail, from initial concept to post-launch optimization.</p>
+</section>
+
+<!-- BLOG Section -->
+<section id="blog">
+  <h1>Blog</h1>
+  <p>We believe in sharing knowledge. Our blog features practical tips, creative inspiration, and industry insights from our team and contributors.</p>
+  <ul style="padding-left: 20px;">
+    <li><strong>“Top 10 UX Mistakes to Avoid in 2025”</strong> — A deep dive into modern user behavior.</li>
+    <li><strong>“Why Page Speed Matters More Than Ever”</strong> — Performance tips backed by real data.</li>
+    <li><strong>“Designing with Accessibility in Mind”</strong> — Inclusive strategies for every user.</li>
+    <li><strong>“Brand Storytelling in the AI Era”</strong> — Blending technology with emotion.</li>
+  </ul>
+  <p>We update our blog every month, so check back regularly for fresh insights!</p>
+  <!-- CONTACT Section -->
+<section id="contact">
+  <h1>Contact</h1>
+  <p>We’d love to hear from you! Whether you have a project in mind, want to collaborate, or just have a question, don’t hesitate to reach out.</p>
+  <p>You can contact us through any of the methods below:</p>
+  <ul style="padding-left: 20px;">
+    <li><strong>Email:</strong> Studio@gmail.com</li>
+    <li><strong>Phone:</strong> +91 98765 43210</li>
+    <li><strong>Office:</strong> 123 Creative Park, Bengaluru, India</li>
+  </ul>
+  <p>Or fill out our simple contact form on our <a href="#" style="color:#1abc9c;">main site</a> to get started. We usually respond within 1 business day!</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 creative digital studio. All Rights Reserved.
+</footer>
+
+</section>
+</body>
+</html>

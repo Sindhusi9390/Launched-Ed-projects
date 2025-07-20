@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0e0e1b;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1a1a2e;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-image {
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      opacity: 0.7;
+      background: linear-gradient(to bottom right, #ff00cc, #3333ff);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    /* Custom overlays for each card */
+    .las-vegas .card-overlay {
+      background: linear-gradient(to bottom right, #ff00cc, #3333ff);
+    }
+
+    .new-york .card-overlay {
+      background: linear-gradient(to bottom right, #00f0ff, #008080);
+    }
+
+    .singapore .card-overlay {
+      background: linear-gradient(to bottom right, #ff9900, #cc3300);
+    }
+
+    .dubai .card-overlay {
+      background: linear-gradient(to bottom right, #00ff99, #006633);
+    }
+
+    /* Responsive typography */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Services</h1>
+
+  <div class="cards-grid">
+    <div class="card las-vegas">
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1549921296-3a6b0b3d3a76');">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-title">Las Vegas</div>
+        <div class="card-text">
+        Las Vegas, Nevada, is a world-renowned city known for its vibrant entertainment, luxury hotels, 
+        casinos, and nightlife. It's the most populous city in Nevada and the seat of Clark County.
+        Often referred to as "Sin City" or the "Entertainment Capital of the World", Las Vegas is a 
+        major resort city attracting millions of tourists annually. 
+        <a href="https://www.britannica.com/place/Las-Vegas-Nevada">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card new-york">
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1533106418989-88406c7d373a');">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-title">New York</div>
+        <div class="card-text">
+        New York refers to both a state and a city within that state in the northeastern United States.
+        New York City (NYC) is the most populous city in the country, located at the southern tip of
+        New York State. It's a global center for finance, culture, media, and more, and is known for 
+        its iconic landmarks like the Statue of Liberty and Times Square. 
+.<a href="https://www.britannica.com/place/New-York-state">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card singapore">
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1580894908361-46f2ad4c5d20');">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-title">Singapore</div>
+        <div class="card-text">
+        Singapore is a vibrant island city-state in Southeast Asia, known for its diverse culture, thriving economy,
+        and modern infrastructure. It's a major global hub for finance, trade, and transportation, and a popular 
+        tourist destination. Singapore is officially known as the Republic of Singapore and is a parliamentary 
+        republic with a president as head of state and a prime minister as head of government. 
+        <a href="https://kids.nationalgeographic.com/geography/countries/article/singapore">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card dubai">
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1553248941-91d27e8b1e5c');">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-title">Dubai</div>
+        <div class="card-text">
+        the most populous city in the United Arab Emirates, is a global hub known for its luxury, 
+        ultramodern architecture, and vibrant nightlife. It's located on the Persian Gulf coast 
+        and is the capital of the Emirate of Dubai, the second-largest emirate in the UAE. Once a 
+        small fishing village, Dubai has transformed into a major center for trade, tourism, and business. 
+    <a href="https://simple.wikipedia.org/wiki/Dubai">Read More →</a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
